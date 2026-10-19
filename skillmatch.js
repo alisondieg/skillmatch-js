@@ -151,7 +151,7 @@ async function executarSistema() {
     console.log("==========================================");
 
   } catch (erro) {
-    console.error("\n❌ ERRO NO SISTEMA:", erro);
+    console.error("\n ERRO NO SISTEMA:", erro);
   }
 }
 
