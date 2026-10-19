@@ -133,10 +133,10 @@ async function executarSistema() {
     });
 
     relatorio.forEach(item => {
-      console.log(`\n📌 Vaga: ${item.vaga.obterResumo()}`);
+      console.log(`\n[VAGA]: ${item.vaga.obterResumo()}`);
       console.log(`   Compatibilidade: ${item.percentual}% (${item.classificacao})`);
       console.log(`   Habilidades Faltantes: ${item.habilidadesFaltantes.length > 0 ? item.habilidadesFaltantes.join(", ") : "Nenhuma"}`);
-      console.log(`   💡 ${item.recomendacao}`);
+      console.log(`   Recomendação: ${item.recomendacao}`);
     });
 
     const vagaMaisCompativel = relatorio.reduce((maior, atual) => {
@@ -144,14 +144,14 @@ async function executarSistema() {
     });
 
     console.log("\n==========================================");
-    console.log("🏆 VAGA COM MAIOR COMPATIBILIDADE:");
+    console.log("VAGA COM MAIOR COMPATIBILIDADE:");
     console.log(`   ${vagaMaisCompativel.vaga.cargo} na ${vagaMaisCompativel.vaga.empresa}`);
     console.log(`   Aderência: ${vagaMaisCompativel.percentual}% (${vagaMaisCompativel.classificacao})`);
     console.log(`\nTotal de análises executadas: ${incrementarAnalise() - 1}`);
     console.log("==========================================");
 
   } catch (erro) {
-    console.error("\n❌ ERRO NO SISTEMA:", erro);
+    console.error("\nERRO NO SISTEMA:", erro);
   }
 }
 
