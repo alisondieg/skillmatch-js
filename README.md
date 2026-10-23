@@ -9,7 +9,7 @@ O SkillMatch JS e uma aplicacao desenvolvida em JavaScript puro para analisar o 
 
 ### Passo a Passo
 1. Clone este repositorio:
-   git clone https://github.com/seu-usuario/skillmatch-js.git
+    https://github.com/alisondieg/skillmatch-js
 
 2. Acesse a pasta do projeto:
    cd skillmatch-js
